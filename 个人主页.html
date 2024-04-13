@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>风吟酱的个人主页</title>
+  <style>
+    .image {
+    /* 加载背景图 */
+    background-image: url(MC背景2.png);
+    /* 背景图垂直、水平均居中*/
+    background-position: center center;
+    /* 背景图不平铺 */
+    background-repeat: no-repeat;
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    /* 设置背景颜色，背景图加载过程中会显示背景色 */
+    background-color: #464646; 
+    /* 50%的透明度 */
+    /* filter: brightness(50%); */
+}
+  </style>
+</head>
+<body>
+<link rel="stylesheet" href="dist/css/navigation.css" type="text/css">
+<link rel="stylesheet" href="dist/css/box.css">
+<link rel="stylesheet" href="dist/css/full-roll.css">
+<link rel="stylesheet" href="dist/css/abcdefg.css">
+<link rel="stylesheet" href="dist/css/css.css">
+<nav class="nav" id="add">
+  <div class="container">
+    <div class="logo">
+      <a href="#">Your Logo</a>
+    </div>
+    <div id="mainListDiv" class="main_list">
+      <ul class="navlinks">
+        <li><a href="#">摄影作品</a></li>
+        <li><a href="#">友情链接</a></li>
+        <li><a href="#">博客</a></li>
+        <li><a href="#">布吉岛</a></li>
+      </ul>
+    </div>
+    <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+  </div>
+</nav>
+<div class="container2">
+  <section class="home big_text">
+    
+    <p class="big_text_p">主页一句话大标题</p>
+  </section>
+
+
+<div style="overflow-y: scroll;height: 100vh;" id="roll">
+<div id="bg_can" style="  position: fixed;z-index: -1;top: 0;left: 0;"></div>
+<div style="height: 60px;"></div>
+<!-- 空的60px盒子，分隔用 -->
+<div>
+  <!-- just to make scrolling effect possible -->
+  <h2 class="myH2">芝士什么?</h2>
+  <p class="myP">这是一个响应式固定导航栏，在滚动时播放</p>
+  <p class="myP">我从这儿 (<a href="https://codepen.io/abdosteif/pen/bRoyMb?editors=1100">https://codepen.io/abdosteif/pen/bRoyMb?editors=1100</a>)
+    和这儿 <a href="https://codepen.io/dicson/pen/waKPgQ">(https://codepen.io/dicson/pen/waKPgQ)</a>找了点灵感</p>
+  <p class="myP">希望对你有用</p>
+  <p class="myP">Albi</p>
+  <p class="myP">
+
+    排版测试Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    排版测试Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    排版测试Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    排版测试Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    排版测试Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    </p>
+
+    <div style="height: 60px;"></div>
+    <!-- 空的60px盒子，分隔用 -->
+    <h2 class="myH2">不知道芝士什么</h2>
+  <div class="box-container">
+    <div class="box box1">
+      <div class="boxlight"></div>
+    </div>
+    <div class="box box2">
+      <div class="boxlight"></div>
+    </div>
+    <div class="box box3">
+      <div class="boxlight"></div>
+    </div>
+    <div class="box box4">
+      <div class="boxlight"></div>
+    </div>
+  </div>
+
+
+  <div style="height: 60px;"></div>
+  <!-- 空的60px盒子，分隔用 -->
+
+
+    <div class="image" style="width: 100%; height: 380px;display: flex;">
+      <!-- <img src="dist/img/image.jpg" height="300" width="300" alt="显示错误"/> -->
+      <div style=" margin: auto;">
+        <p style="color: white;font-size: 40px;font-weight: bold;">风吟酱的MC小温馨服务器</p>
+        <p style="color: white;font-size: 20px;">里面有各种大佬小白刀子糖果怪物变态和好人</p>
+        <button class="button" style=" float: left;" id="copyButton">复制IP</button>
+        <button class="button2" style="float:right" onclick=" window.open('404.html');">查看详情</button>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="item"><p class="text">哔哩哔哩</p><img src="src/img/icon_bilibili.png"/></div>
+      <div class="item"><p class="text">电子邮箱</p><img src="src/img/邮件.png"/></div>
+      <div class="item"><p class="text">QQ</p><img src="src/img/QQ.png"/></div>
+    </div>
+      
+    <!-- 下面这行是空白占位看滚动效果用的 -->
+    <!-- <div style="height:600px;width:100%;"></div> -->
+
+    <div style="height: 60px;"></div>
+    <!-- 空的60px盒子，分隔用 -->
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+      <!-- <iframe src="http://localhost:3000/typecho/?list" style="width: 60%;height: 1000px;border:none;width:620px;" ></iframe> -->
+    </div>
+
+
+  <!-- <div style="width: 100%;height: 20px;background-color: rgb(255, 255, 255);opacity: 0.6;text-align: center;"> -->
+  <div class="top_border">
+    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102020201"  class="top_border_p">京公网安备1145141919810号</a>
+  </div>
+  <!-- </div> -->
+</div>
+</div>
+</div>
+<!-- 需要的js -->
+<!--<script src="js/jquery.min.js"></script>-->
+<script src="js/scripts.js"></script>
+<script>
+document.getElementById('copyButton').addEventListener('click', function() {
+    // 指定要复制的文本
+    var textToCopy = "mc.poetrywindy.com";
+
+    // 创建一个临时的输入框来存放文本内容
+    var tempInput = document.createElement('textarea');
+    tempInput.value = textToCopy;
+    document.body.appendChild(tempInput);
+
+    // 选中并复制文本
+    tempInput.select();
+    document.execCommand('copy');
+
+    // 删除临时创建的输入框
+    document.body.removeChild(tempInput);
+
+    // 可选：显示复制成功的提示
+    alert('服务器IP已复制到剪贴板');
+});
+</script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<script src="theme/pixi.min.js"></script>
+<script src="theme/jquery-1.12.4.min.js"></script>
+<script src="theme/background.js"></script>
+<script>
+  this.background = new Background();
+</script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<!--<script>-->
+<!--  $(window).scroll(function() {-->
+<!--    if ($(document).scrollTop() > 50) {-->
+<!--      $('.nav').addClass('affix');-->
+<!--      console.log("OK")-->
+<!--    } else {-->
+<!--      $('.nav').removeClass('affix');-->
+<!--    }-->
+<!--  });-->
+<!--</script>-->
+</body>
+</html>

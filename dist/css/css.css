@@ -1,0 +1,54 @@
+.top_border{
+    border-top: 1px solid gainsboro;
+    background-color: #f6f6f6;
+    padding: 20px;
+    text-align:center;
+    
+}/*芝士底栏div的样式*/
+
+.top_border_p{
+    font-size: 15px;
+    color: DimGray;
+    text-decoration: none;
+    transition: color 0.3s;
+}/*芝士底栏p的样式*/
+
+.top_border_p:hover{
+    color: black;
+}/*芝士底栏鼠标悬停的css样式*/
+
+
+.big_text{  
+    margin:auto;
+}/*芝士首页文字div的样式*/
+
+.big_text_p{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    line-height: 100vh;
+    position: absolute;
+    text-shadow: 1px 1px 5px black;
+    top: -80px;/*抱歉我也布吉岛怎么回事往下偏了80px 以次修正云云 本网站依靠bug运行*/
+}/*芝士首页文字p的样式*/
+
+.contact {
+    display: flex; /* 使用flex布局 */
+    height: 300px; /* 设置容器高度 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+   
+.item {
+    /* margin-right: 80px; 可选，为了在元素之间添加间隔 */
+    width: 30%;
+    text-align: center;
+}
+
+.text{
+    font-family: initial;
+    color: #121212;
+    font-size: 50px;
+}
