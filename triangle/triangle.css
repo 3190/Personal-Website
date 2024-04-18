@@ -1,0 +1,100 @@
+.container {
+  position: relative; /* 父容器设置为相对定位 */
+}
+
+.triangle {
+  width: 160px;
+  height: 200px;
+  background-color: skyblue;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(270deg);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  overflow: hidden; /* 隐藏超出部分 */
+}
+
+.triangle:before {
+  content: '';
+  position: relative;
+  top: -10px; /* 根据需要调整阴影的偏移量 */
+  left: -10px; /* 根据需要调整阴影的偏移量 */
+  width: calc(100% + 20px); /* 略大于三角形的宽度 */
+  height: calc(100% + 20px); /* 略大于三角形的高度 */
+  background-color: red;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(270deg);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); /* 阴影效果 */
+}
+.shadow-triangle {
+  display: inline-block;
+  transform: scaleX(2.5);
+  color: #bada55;
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.7), 0 10px 4px rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.shadow-triangle:hover {
+  transition: all 0.2s ease;
+  transform: scaleX(2.5) translateY(4px);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.triangle1{
+  width: 120px;
+  height: 150px;
+  background-color: #111111;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(90deg);
+  position: absolute;
+  left: calc(50% + 125px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 40px); /* Half of height (150px) */
+  filter: drop-shadow(2px 2px 2px rgba(202, 0, 0, 0.2));
+}
+
+.triangle2{
+  width: 120px;
+  height: 150px;
+  background-color: #111111;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(90deg);
+  position: absolute;
+  left: calc(50% - 67px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 10px); /* Half of height (150px) */
+}
+
+.triangle3{
+  width: 100px;
+  height: 125px;
+  background-color: #111111;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(270deg);
+  position: absolute;
+  left: calc(50% + 205px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 65px); /* Half of height (150px) */
+}
+
+.triangle4{
+  width: 100px;
+  height: 125px;
+  background-color: #111111;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(270deg);
+  position: absolute;
+  left: calc(50% - 133px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 25px); /* Half of height (150px) */
+}
+
+.triangle5{
+  width: 80px;
+  height: 100px;
+  background-color: #111111;
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  transform: rotate(90deg) translate(50%, -50%);
+  position: absolute;
+  left: calc(50% - 0px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 135px); /* Half of height (150px) */
+}
+
+

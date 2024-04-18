@@ -1,0 +1,11 @@
+.partition{
+    height: 60px;
+    /* background-color: blue; */
+}
+@media screen and (max-width: 768px) {
+    .partition{
+        height: 30px;
+        /* background-color: red; */
+    }
+    
+}
