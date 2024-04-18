@@ -1,0 +1,99 @@
+.box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+
+}
+
+.box {
+  overflow: hidden;
+  position: relative;
+  flex-basis: 300px;
+  height: 210px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  margin-right: 50px;
+  max-width: 300px;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.box1 {
+  /* background-color: rgba(248, 239, 95, 0.99); */
+  background-image: url(../../src/img/linden-park-3-1621319.jpg);
+  background-size: 100%;
+}
+
+.box2 {
+  /* background-color: rgba(40, 250, 75, 0.99); */
+  background-image: url(../../src/img/sea-and-mines-remains-of-the-washery-lamarmora-1622138.jpg);
+  background-size: 100%;
+}
+
+.box3 {
+  /* background-color: rgba(253, 63, 114, 0.99); */
+  background-image: url(../../src/img/smoky-mountains-at-sunset-north-carolina-2152413.jpg);
+  background-size: 100%;
+}
+
+.box4 {
+  /* background-color: rgba(37, 137, 252, 0.99); */
+  background-image: url(../../src/img/watter-drops-2-1621819.jpg);
+  background-size: 100%;
+  margin-right: 0;
+}
+
+.boxlight {
+  position: absolute;
+  left: -110%;
+  top: 0;
+  width: 300px;
+  height: 210px;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
+  transform: skew(-30deg);
+}
+
+.box:hover {
+  transform: translateY(-9px);
+  box-shadow: 0 26px 20px -24px rgb(0 36 100 / 50%);
+}
+
+.box:hover .boxlight {
+  left: 110%;
+  transition: all 0.3s;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  .box {
+    max-width: 240px;
+    width: 15px;
+    margin-right: 15px;
+    flex-basis: 240px;
+
+    /*width: calc(50% - 25px); /* Set the width for two boxes in a row */
+    margin-bottom: 50px; /* Add margin-bottom for spacing between rows */
+  }
+}
+
+/* Media query for screen width less than 768px */
+@media screen and (max-width: 1050px) {
+  .box {
+    max-width: 320px;
+    margin-right: 50px;
+    flex-basis: 320px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    max-width: 768px;
+    flex-basis: 768px;
+
+    margin-right: 0;
+    width: calc(50% - 25px); /* Set the width for two boxes in a row */
+    margin-bottom: 5px; /* Add margin-bottom for spacing between rows */
+
+  }
+}

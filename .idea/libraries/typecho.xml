@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="typecho">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/typecho.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

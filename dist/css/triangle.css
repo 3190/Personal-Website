@@ -1,0 +1,99 @@
+.triangle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* 居中 */
+}
+
+.triangle::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 320px solid rgba(255, 255, 255, 0.35); /* 白色三角形，设置透明度 */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.triangle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* 确保覆盖整个三角形 */
+  height: 100%; /* 确保覆盖整个三角形 */
+  backdrop-filter: blur(10px); /* 添加磨砂玻璃效果 */
+
+  filter: drop-shadow(2px 2px 4px rgba(17, 17, 17, 0.7)); /* 添加阴影效果 */
+}
+
+
+.triangle1{
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent; /* 左侧边为透明 */
+  border-right: 150px solid transparent; /* 右侧边为透明 */
+  border-top: 240px solid rgba(37, 137, 252, 0.99); /* 底边为白色，即三角形的颜色 */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: calc(50% - 165px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% - 30px); /* Half of height (150px) */
+  filter: drop-shadow(2px 2px 2px rgb(17, 17, 17)); /* 阴影效果 */
+}
+
+.triangle2{
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent; /* 左侧边为透明 */
+  border-right: 150px solid transparent; /* 右侧边为透明 */
+  border-top: 240px solid rgba(37, 137, 252, 0.99); /* 底边为白色，即三角形的颜色 */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: calc(50% + 202px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 30px); /* Half of height (150px) */
+  filter: drop-shadow(2px 2px 2px rgb(17, 17, 17)); /* 阴影效果 */
+}
+
+.triangle3{
+  width: 0;
+  height: 0;
+  border-left: 124px solid transparent; /* 左侧边为透明 */
+  border-right: 124px solid transparent; /* 右侧边为透明 */
+  border-bottom: 200px solid rgba(37, 137, 252, 0.99); /* 底边为白色，即三角形的颜色 */
+  transform: rotate(0deg) translate(-50%, -50%);
+  position: absolute;
+  left: calc(50% + 335px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 50px); /* Half of height (150px) */
+  filter: drop-shadow(2px 2px 2px rgb(17, 17, 17)); /* 阴影效果 */
+}
+
+.triangle4{
+  width: 0;
+  height: 0;
+  border-left: 124px solid transparent; /* 左侧边为透明 */
+  border-right: 124px solid transparent; /* 右侧边为透明 */
+  border-bottom: 200px solid rgba(37, 137, 252, 0.99); /* 底边为白色，即三角形的颜色 */
+  transform: rotate(0deg) translate(-50%, -50%);
+  position: absolute;
+  left: calc(50% - 317px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% - 40px); /* Half of height (150px) */
+  filter: drop-shadow(2px 2px 2px rgb(17, 17, 17)); /* 阴影效果 */
+}
+
+.triangle5{
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent; /* 左侧边为透明 */
+  border-right: 100px solid transparent; /* 右侧边为透明 */
+  border-top: 160px solid rgba(37, 137, 252, 0.99); /* 底边为白色，即三角形的颜色 */
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: calc(50% + 27px); /* 160px (width of .triangle) / 2 + 5px (desired spacing) */
+  top: calc(50% + 250px); /* Half of height (150px) */
+  filter: drop-shadow(2px 2px 2px rgb(17, 17, 17)); /* 阴影效果 */
+}
+
+
